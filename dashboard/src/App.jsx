@@ -4,9 +4,7 @@ import publicRoute from "./router/routes/publicRoutes";
 
 // const publicRoutePath = publicRoutes;
 
-function App() {
+export default function App() {
   const [allRoutes, setAllRoutes] = useState([...publicRoute]);
   return <Router allRoutes={allRoutes} />;
 }
-
-export default App;
